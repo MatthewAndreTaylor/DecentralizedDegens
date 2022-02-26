@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono'); 
+
+/*On root default*/
+:root{
+    /* ===== Colors ===== */
+    --body-color: #afb4c2;
+    --navbar-color: #FFF;
+    --primary-color: #6da2dd;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #7121EA;
+
+    /* ====== Transition ====== */
+    --tran-03: all 0.05s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+    --tran-06: all 0.6s ease;
+}
+
+.navbar{
+  background-color: var(--navbar-color);
+  opacity: 0.7;
+}
+
+/*On Select defualt*/
+::selection{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.popover {
+  font-family: 'Ubuntu Mono';
+}
+
+#myVideo {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+}
+
+body{
+    font-family: 'Ubuntu Mono';
+    min-height: 100vh;
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar-toggler{
+    border-radius: 8px;
+    outline: transparent !important;
+    border-color: transparent !important;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.split{
+    min-width: 20px;
+}
+
+.content{
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--toggle-color);
+  opacity: 0.5;
+}
+
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+/*======== toasts =========*/
+.custom-toast {
+  display: flex;
+  align-items: center;
+}
+
+.custom-toast img {
+  background-size: 50px 50px;
+  height: 40px;
+  width: 40px;
+}
+
+.custom-toast p {
+  font-size: 14px;
+  padding: 10px;
+}
+
+#toasts {
+  min-height: 0;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 350px;
+}
+
+#toasts .toast {
+    background: #d6d8d9;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, .1);
+    color: rgba(0,0,0, .6);
+    cursor: default;
+    margin-bottom: 20px;
+    opacity: 0;
+    position: relative;
+    padding: 10px;
+    transform: translateY(15%);
+    transition: opacity .5s ease-in-out, transform .5s ease-in-out;
+    width: 100%;
+    will-change: opacity, transform;
+    z-index: 1100;
+    float: right;
+  } 
+  
+  #toasts .toast.success {
+    background: #26d68a;
+  }
+  
+  #toasts .toast.warning {
+    background: #ffa533;
+  }
+  
+  #toasts .toast.info {
+    background: #2cbcff;
+  }
+  
+  #toasts .toast.error {
+    background: #f44336;
+  }
+  
+  #toasts .toast.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity .5s ease-in-out, transform .5s ease-in-out;
+  }
+  
+  #toasts .toast .close {
+    cursor: pointer;
+    font-size: 24px;
+    height: 16px;
+    margin-top: -22px;
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    width: 16px;
+  }

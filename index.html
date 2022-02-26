@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" sizes="192x192" href="./images/favicon.ico">
+
+  <!----======== Web3 ======== -->
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="./scripts/moralis.js"></script>
+  
+  <!----======== CSS ======== -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!----===== Boxicons CSS ===== -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+  <!----===== Custom Elements ===== -->
+  <script type="text/javascript" src="./scripts/customElements.js"></script>
+  
+  <title>Mint | Decentralized Degens</title>
+</head>
+<body>
+  <video autoplay muted loop id="myVideo">
+    <source src="./images/samplevid.mp4" type="video/mp4">
+  </video>
+  <nav-component></nav-component>
+  <div id="toasts"></div>
+  <section class="content">
+    <h1 style="padding-top:20px">Smart Contracts</h1>
+    <h2 style="padding:10px; text-decoration: underline;"> Donate</h2>
+    <a href="https://mumbai.polygonscan.com/address/0x6B7723753442241cb4fe24854f319E21129D9ACf" target="_blank" style="padding:10px">
+      <i class='bx bx-link-external' style='color:#1a76c1'></i>
+      View on Explorer
+    </a>
+    <div class="container" style="padding:30px">
+      <button class="btn btn-outline-dark" id="donate">0.1 Test Matic</button>
+    </div>
+    <h2 style="padding:10px; text-decoration: underline;">Mint</h2>
+    <a class="isDisabled" style="padding:10px">
+      <i class='bx bx-link-external' style='color:#1a76c1'></i>
+      View on Explorer
+    </a>
+    <div class="container" style="padding:30px">
+      <span class="d-inline-block" data-toggle="popover" data-content="Minting Coming Soon...">
+        <button class="btn btn-outline-dark" style="pointer-events: none;" type="button" disabled>444 Test Matic</button>
+      </span>
+    </div>
+  </section>
+  <script type="text/javascript" src="./scripts/local.js"></script>
+  <script type="text/javascript" src="./scripts/main.js"></script>
+  <script type="text/javascript" src="./scripts/webapp.js"></script>
+</body>
+</html>

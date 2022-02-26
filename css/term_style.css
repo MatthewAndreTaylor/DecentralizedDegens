@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quantico:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  
+  html, body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Quantico';
+  }
+
+  body {
+    background-color: black;
+    background-image: radial-gradient(
+      rgba(26, 46, 29, 0.4), black 120%
+    );
+    margin: 0;
+    overflow: hidden;
+    padding: 2rem;
+    text-shadow: 0 0 2px #C8C8C8;
+  }
+
+  h1{
+    color: white;
+    display: inline;
+  }
+
+  .image-top{
+    width: 75px;
+    height:75px;
+    display: inline;
+  }
+
+  @media screen and (max-width: 600px) {
+    h1{
+      font-size: medium;
+    }
+
+    .image-top{
+      width: 50px;
+      height:50px;
+    }
+  }
+
+  
+  .faux-input {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    width: 0px;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    opacity: 0;
+  }
+  
+  .term {
+    width: 100%;
+    height: 100%;
+    font-family: 'JetBrains Mono';
+    font-weight: 400;
+    -webkit-font-smoothing : none;
+    font-size: 10.5pt;
+    padding: 3px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    display: block;
+    line-height: 1.2em;
+    overflow-y: scroll;
+    position: relative;
+    color: #888;
+  }
+  
+  .term-focus {
+    /*text-shadow:none*/
+    text-shadow: 0 0 2px #C8C8C8;
+    color: #ccc;
+  }
+  
+  .term .red {
+    color: red;
+  }
+  .term .blue {
+    color: blue;
+  }
+  .term .white {
+    color: #fff;
+  }
+  .term .bold {
+    font-weight: bold;
+  }
+  
+  .bell {
+    width: 0.1em;
+    height: 1.1em;
+    line-height: 1.2em;
+    background: #fff;
+    position: absolute;
+    animation: flash 1s infinite;
+  }
+  
+  @keyframes flash {
+    0% {
+      visibility: visible;
+    }
+    49% {
+      visibility: visible;
+    }
+    50% {
+      visibility: hidden;
+    }
+    99% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  
+  /* Let's get this party started */
+  ::-webkit-scrollbar {
+      width: 12px;
+  }
+   
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+   
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #111;
+  }
